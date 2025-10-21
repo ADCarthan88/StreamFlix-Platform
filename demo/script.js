@@ -1,205 +1,244 @@
-// Movie Data
+// Movie Data with Real Movies
 const moviesData = {
     trending: [
         {
-            id: 'quantum-nexus',
-            title: 'Quantum Nexus',
-            description: 'A mind-bending sci-fi thriller about parallel dimensions and quantum mechanics.',
+            id: 'dune-part-two',
+            title: 'Dune: Part Two',
+            description: 'Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.',
             genre: 'Sci-Fi',
             year: 2024,
-            rating: 8.7,
-            duration: '2h 22m',
-            poster: 'https://picsum.photos/400/600?random=1',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
+            rating: 8.8,
+            duration: '2h 46m',
+            poster: 'https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg',
+            trailer: 'https://www.youtube.com/embed/Way9Dexny3w'
         },
         {
-            id: 'neon-shadows',
-            title: 'Neon Shadows',
-            description: 'Cyberpunk thriller set in a dystopian future where memories can be stolen.',
-            genre: 'Action',
-            year: 2024,
-            rating: 8.4,
-            duration: '2h 8m',
-            poster: 'https://picsum.photos/400/600?random=2',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
-        },
-        {
-            id: 'stellar-odyssey',
-            title: 'Stellar Odyssey',
-            description: 'Epic space adventure across the galaxy with stunning visuals.',
-            genre: 'Adventure',
-            year: 2024,
-            rating: 8.9,
-            duration: '2h 36m',
-            poster: 'https://picsum.photos/400/600?random=3',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
-        },
-        {
-            id: 'digital-dreams',
-            title: 'Digital Dreams',
-            description: 'Virtual reality meets consciousness in this thought-provoking drama.',
-            genre: 'Drama',
-            year: 2024,
-            rating: 8.2,
-            duration: '2h 14m',
-            poster: 'https://picsum.photos/400/600?random=4',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
-        },
-        {
-            id: 'midnight-protocol',
-            title: 'Midnight Protocol',
-            description: 'High-stakes cyber espionage thriller with non-stop action.',
-            genre: 'Thriller',
+            id: 'oppenheimer',
+            title: 'Oppenheimer',
+            description: 'The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.',
+            genre: 'Biography',
             year: 2023,
-            rating: 8.6,
-            duration: '2h 1m',
-            poster: 'https://picsum.photos/400/600?random=5',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
+            rating: 8.4,
+            duration: '3h 0m',
+            poster: 'https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg',
+            trailer: 'https://www.youtube.com/embed/uYPbbksJxIg'
         },
         {
-            id: 'echo-chamber',
-            title: 'Echo Chamber',
-            description: 'Psychological horror that explores the depths of human consciousness.',
-            genre: 'Horror',
-            year: 2024,
-            rating: 7.9,
-            duration: '1h 55m',
-            poster: 'https://picsum.photos/400/600?random=6',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
+            id: 'avatar-way-of-water',
+            title: 'Avatar: The Way of Water',
+            description: 'Jake Sully lives with his newfound family formed on the extrasolar moon Pandora.',
+            genre: 'Adventure',
+            year: 2022,
+            rating: 7.6,
+            duration: '3h 12m',
+            poster: 'https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg',
+            trailer: 'https://www.youtube.com/embed/d9MyW72ELq0'
+        },
+        {
+            id: 'top-gun-maverick',
+            title: 'Top Gun: Maverick',
+            description: 'After thirty years, Maverick is still pushing the envelope as a top naval aviator.',
+            genre: 'Action',
+            year: 2022,
+            rating: 8.3,
+            duration: '2h 11m',
+            poster: 'https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg',
+            trailer: 'https://www.youtube.com/embed/qSqVVswa420'
+        },
+        {
+            id: 'spider-man-no-way-home',
+            title: 'Spider-Man: No Way Home',
+            description: 'With Spider-Man\'s identity now revealed, Peter asks Doctor Strange for help.',
+            genre: 'Action',
+            year: 2021,
+            rating: 8.2,
+            duration: '2h 28m',
+            poster: 'https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg',
+            trailer: 'https://www.youtube.com/embed/JfVOs4VSpmA'
+        },
+        {
+            id: 'the-batman',
+            title: 'The Batman',
+            description: 'When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham.',
+            genre: 'Action',
+            year: 2022,
+            rating: 7.8,
+            duration: '2h 56m',
+            poster: 'https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg',
+            trailer: 'https://www.youtube.com/embed/mqqft2x_Aa4'
         }
     ],
     recommended: [
         {
-            id: 'time-fracture',
-            title: 'Time Fracture',
-            description: 'A scientist discovers time travel but at a devastating cost.',
+            id: 'interstellar',
+            title: 'Interstellar',
+            description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival.',
             genre: 'Sci-Fi',
-            year: 2024,
+            year: 2014,
+            rating: 8.6,
+            duration: '2h 49m',
+            poster: 'https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg',
+            trailer: 'https://www.youtube.com/embed/zSWdZVtXT7E'
+        },
+        {
+            id: 'inception',
+            title: 'Inception',
+            description: 'A thief who steals corporate secrets through dream-sharing technology is given the inverse task.',
+            genre: 'Sci-Fi',
+            year: 2010,
             rating: 8.8,
-            duration: '2h 18m',
-            poster: 'https://picsum.photos/400/600?random=7',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
+            duration: '2h 28m',
+            poster: 'https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg',
+            trailer: 'https://www.youtube.com/embed/YoHD9XEInc0'
         },
         {
-            id: 'neural-link',
-            title: 'Neural Link',
-            description: 'Brain-computer interfaces blur the line between human and machine.',
+            id: 'the-matrix',
+            title: 'The Matrix',
+            description: 'A computer programmer discovers that reality as he knows it is a simulation.',
             genre: 'Sci-Fi',
-            year: 2024,
-            rating: 8.3,
-            duration: '2h 5m',
-            poster: 'https://picsum.photos/400/600?random=8',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
+            year: 1999,
+            rating: 8.7,
+            duration: '2h 16m',
+            poster: 'https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg',
+            trailer: 'https://www.youtube.com/embed/vKQi3bBA1y8'
         },
         {
-            id: 'shadow-realm',
-            title: 'Shadow Realm',
-            description: 'Fantasy epic about a world hidden in the shadows of our reality.',
-            genre: 'Fantasy',
-            year: 2024,
-            rating: 8.5,
-            duration: '2h 42m',
-            poster: 'https://picsum.photos/400/600?random=9',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
-        },
-        {
-            id: 'code-red',
-            title: 'Code Red',
-            description: 'Military thriller about a cyber attack on global infrastructure.',
-            genre: 'Thriller',
-            year: 2024,
-            rating: 8.1,
-            duration: '2h 12m',
-            poster: 'https://picsum.photos/400/600?random=10',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
+            id: 'blade-runner-2049',
+            title: 'Blade Runner 2049',
+            description: 'A young blade runner discovers a long-buried secret that leads him to track down former blade runner Rick Deckard.',
+            genre: 'Sci-Fi',
+            year: 2017,
+            rating: 8.0,
+            duration: '2h 44m',
+            poster: 'https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg',
+            trailer: 'https://www.youtube.com/embed/gCcx85zbxz4'
         }
     ],
     tvShows: [
         {
-            id: 'quantum-series',
-            title: 'Quantum Series',
-            description: 'A TV series exploring parallel universes and quantum physics.',
+            id: 'stranger-things',
+            title: 'Stranger Things',
+            description: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments.',
             genre: 'Sci-Fi',
-            year: 2024,
-            rating: 9.1,
-            duration: 'Season 1',
-            poster: 'https://picsum.photos/400/600?random=11',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
-        },
-        {
-            id: 'cyber-city',
-            title: 'Cyber City',
-            description: 'Cyberpunk series set in a futuristic metropolis.',
-            genre: 'Action',
-            year: 2024,
+            year: 2016,
             rating: 8.7,
-            duration: 'Season 2',
-            poster: 'https://picsum.photos/400/600?random=12',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
+            duration: '4 Seasons',
+            poster: 'https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg',
+            trailer: 'https://www.youtube.com/embed/b9EkMc79ZSU'
         },
         {
-            id: 'mind-games',
-            title: 'Mind Games',
-            description: 'Psychological thriller series about memory manipulation.',
-            genre: 'Thriller',
-            year: 2024,
-            rating: 8.9,
-            duration: 'Season 1',
-            poster: 'https://picsum.photos/400/600?random=13',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
+            id: 'the-last-of-us',
+            title: 'The Last of Us',
+            description: 'Twenty years after a fungal outbreak, survivors Joel and Ellie journey across a dangerous America.',
+            genre: 'Drama',
+            year: 2023,
+            rating: 8.8,
+            duration: '1 Season',
+            poster: 'https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg',
+            trailer: 'https://www.youtube.com/embed/uLtkt8BonwM'
         },
         {
-            id: 'space-frontier',
-            title: 'Space Frontier',
-            description: 'Space exploration series following humanity\'s expansion.',
-            genre: 'Adventure',
-            year: 2024,
+            id: 'house-of-the-dragon',
+            title: 'House of the Dragon',
+            description: 'The Targaryen civil war begins. House of the Dragon tells the story of the Targaryen dynasty.',
+            genre: 'Fantasy',
+            year: 2022,
             rating: 8.4,
-            duration: 'Season 3',
-            poster: 'https://picsum.photos/400/600?random=14',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
+            duration: '2 Seasons',
+            poster: 'https://image.tmdb.org/t/p/w500/7QMsOTMUswlwxJP0rTTZfmz2tX2.jpg',
+            trailer: 'https://www.youtube.com/embed/DotnJ7tTA34'
+        },
+        {
+            id: 'wednesday',
+            title: 'Wednesday',
+            description: 'Wednesday Addams navigates her years as a student at Nevermore Academy.',
+            genre: 'Comedy',
+            year: 2022,
+            rating: 8.1,
+            duration: '1 Season',
+            poster: 'https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg',
+            trailer: 'https://www.youtube.com/embed/Di310WS8zLk'
         }
     ],
     newReleases: [
         {
-            id: 'aurora-rising',
-            title: 'Aurora Rising',
-            description: 'Epic space opera about the last hope for humanity.',
-            genre: 'Sci-Fi',
-            year: 2024,
-            rating: 8.6,
-            duration: '2h 28m',
-            poster: 'https://picsum.photos/400/600?random=15',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
-        },
-        {
-            id: 'dark-matter',
-            title: 'Dark Matter',
-            description: 'Scientists discover dark matter has consciousness.',
-            genre: 'Sci-Fi',
-            year: 2024,
-            rating: 8.3,
-            duration: '2h 15m',
-            poster: 'https://picsum.photos/400/600?random=16',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4'
-        },
-        {
-            id: 'virtual-escape',
-            title: 'Virtual Escape',
-            description: 'Trapped in a virtual world, players must find the exit.',
+            id: 'guardians-galaxy-3',
+            title: 'Guardians of the Galaxy Vol. 3',
+            description: 'Peter Quill must rally his team around him to defend the universe and protect one of their own.',
             genre: 'Action',
-            year: 2024,
-            rating: 8.0,
+            year: 2023,
+            rating: 7.9,
+            duration: '2h 30m',
+            poster: 'https://image.tmdb.org/t/p/w500/5YZbUmjbMa3ClvSW1Wj3Zbcy7vu.jpg',
+            trailer: 'https://www.youtube.com/embed/u3V5KDHRQvk'
+        },
+        {
+            id: 'john-wick-4',
+            title: 'John Wick: Chapter 4',
+            description: 'John Wick uncovers a path to defeating The High Table.',
+            genre: 'Action',
+            year: 2023,
+            rating: 7.7,
+            duration: '2h 49m',
+            poster: 'https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg',
+            trailer: 'https://www.youtube.com/embed/qEVUtrk8_B4'
+        },
+        {
+            id: 'fast-x',
+            title: 'Fast X',
+            description: 'Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.',
+            genre: 'Action',
+            year: 2023,
+            rating: 5.8,
+            duration: '2h 21m',
+            poster: 'https://image.tmdb.org/t/p/w500/fiVW06jE7z9YnO4trhaMEdclSiC.jpg',
+            trailer: 'https://www.youtube.com/embed/32RAq6JzY-w'
+        },
+        {
+            id: 'scream-vi',
+            title: 'Scream VI',
+            description: 'The survivors of the Ghostface killings leave Woodsboro behind and start a fresh chapter in New York City.',
+            genre: 'Horror',
+            year: 2023,
+            rating: 6.5,
             duration: '2h 3m',
-            poster: 'https://picsum.photos/400/600?random=17',
-            trailer: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4'
+            poster: 'https://image.tmdb.org/t/p/w500/wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg',
+            trailer: 'https://www.youtube.com/embed/h74AXqw4Opc'
         }
     ]
 };
 
 // Global Variables
 let currentHeroMovie = 0;
-const heroMovies = moviesData.trending.slice(0, 3);
+const heroMovies = [
+    {
+        title: 'Dune: Part Two',
+        description: 'Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. When faced with a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.',
+        rating: 8.8,
+        year: 2024,
+        genre: 'Sci-Fi',
+        duration: '2h 46m',
+        background: 'https://www.youtube.com/embed/Way9Dexny3w?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playlist=Way9Dexny3w'
+    },
+    {
+        title: 'Oppenheimer',
+        description: 'The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II.',
+        rating: 8.4,
+        year: 2023,
+        genre: 'Biography',
+        duration: '3h 0m',
+        background: 'https://www.youtube.com/embed/uYPbbksJxIg?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playlist=uYPbbksJxIg'
+    },
+    {
+        title: 'Avatar: The Way of Water',
+        description: 'Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started.',
+        rating: 7.6,
+        year: 2022,
+        genre: 'Adventure',
+        duration: '3h 12m',
+        background: 'https://www.youtube.com/embed/d9MyW72ELq0?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playlist=d9MyW72ELq0'
+    }
+];
 let userInteractions = {
     liked: new Set(),
     watchlist: new Set(),
@@ -311,6 +350,12 @@ function changeHeroMovie(index) {
     document.querySelector('.year').textContent = movie.year;
     document.querySelector('.genre').textContent = movie.genre;
     document.querySelector('.duration').textContent = movie.duration;
+    
+    // Update background video
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo && movie.background) {
+        heroVideo.src = movie.background;
+    }
     
     // Update indicators
     document.querySelectorAll('.indicator').forEach((indicator, i) => {
@@ -457,6 +502,24 @@ function playMovie(movieId) {
     }
 }
 
+// Play Hero Movie
+function playHeroMovie() {
+    const heroMovie = heroMovies[currentHeroMovie];
+    const movieData = findMovieById('dune-part-two') || moviesData.trending[0];
+    
+    if (movieData) {
+        showVideoModal(movieData);
+        userInteractions.watched.add(movieData.id);
+        
+        // Simulate API call
+        simulateAPICall('POST', '/api/interactions', {
+            movie_id: movieData.id,
+            interaction_type: 'view',
+            watch_duration: 0
+        });
+    }
+}
+
 // Find Movie by ID
 function findMovieById(movieId) {
     const allMovies = [
@@ -494,28 +557,41 @@ function setupVideoModal() {
 
 function showVideoModal(movie) {
     const modal = document.getElementById('video-modal');
-    const video = document.getElementById('modal-video');
+    const videoContainer = document.querySelector('.video-container');
     const title = document.getElementById('video-title');
     const description = document.getElementById('video-description');
     
-    video.src = movie.trailer;
-    video.dataset.movieId = movie.id;
+    // Clear existing content
+    videoContainer.innerHTML = '';
+    
+    // Create YouTube iframe
+    const iframe = document.createElement('iframe');
+    iframe.src = movie.trailer.replace('watch?v=', 'embed/').replace('youtu.be/', 'youtube.com/embed/') + '?autoplay=1&rel=0';
+    iframe.frameBorder = '0';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    iframe.dataset.movieId = movie.id;
+    
+    videoContainer.appendChild(iframe);
+    
     title.textContent = movie.title;
     description.textContent = movie.description;
     
     modal.classList.add('active');
-    video.play();
     
     showToast(`Now playing: ${movie.title}`, 'success');
 }
 
 function closeVideoModal() {
     const modal = document.getElementById('video-modal');
-    const video = document.getElementById('modal-video');
+    const videoContainer = document.querySelector('.video-container');
     
     modal.classList.remove('active');
-    video.pause();
-    video.src = '';
+    
+    // Clear video content to stop playback
+    setTimeout(() => {
+        videoContainer.innerHTML = '<video id="modal-video" controls><source src="" type="video/mp4">Your browser does not support the video tag.</video>';
+    }, 300);
 }
 
 // Carousel Navigation
